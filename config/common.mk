@@ -220,6 +220,9 @@ include vendor/afterlife/config/afterlife_bootanimation.mk
 # Packages
 include vendor/afterlife/config/afterlife_packages.mk
 
+# Pixel Props
+include vendor/afterlife/config/pixel_props.mk
+
 # Signed
 include vendor/afterlife/config/afterlife_signed.mk
 
