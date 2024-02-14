@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Copyright (C) 2012-2013, The CyanogenMod Project
 # Copyright (C) 2023, The AfterLife Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
