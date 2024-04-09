@@ -59,7 +59,8 @@ SOONG_CONFIG_afterlifeGlobalVars += \
     target_camera_package_name \
     camera_needs_client_info \
     uses_nothing_camera \
-    uses_miui_camera
+    uses_miui_camera \
+    uses_oppo_camera
 
 SOONG_CONFIG_NAMESPACES += afterlifeNvidiaVars
 SOONG_CONFIG_afterlifeNvidiaVars += \
@@ -96,6 +97,7 @@ SOONG_CONFIG_afterlifeGlobalVars_uses_legacy_fd_fbdev := $(TARGET_USES_LEGACY_FD
 SOONG_CONFIG_afterlifeGlobalVars_uses_miui_camera := $(TARGET_USES_MIUI_CAMERA)
 SOONG_CONFIG_afterlifeGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_afterlifeGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
+SOONG_CONFIG_afterlifeGlobalVars_uses_oppo_camera := $(TARGET_USES_OPPO_CAMERA)
 SOONG_CONFIG_afterlifeGlobalVars_sdmcore_has_is_display_hw_available_func := $(TARGET_SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC)
 SOONG_CONFIG_afterlifeGlobalVars_target_camera_package_name := $(TARGET_CAMERA_PACKAGE_NAME)
 
