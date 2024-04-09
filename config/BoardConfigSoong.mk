@@ -60,7 +60,8 @@ SOONG_CONFIG_afterlifeGlobalVars += \
     camera_needs_client_info \
     uses_nothing_camera \
     uses_miui_camera \
-    uses_oppo_camera
+    uses_oppo_camera \
+    include_miui_camera
 
 SOONG_CONFIG_NAMESPACES += afterlifeNvidiaVars
 SOONG_CONFIG_afterlifeNvidiaVars += \
@@ -87,6 +88,7 @@ SOONG_CONFIG_afterlifeGlobalVars_camera_needs_client_info_lib_oplus := $(TARGET_
 SOONG_CONFIG_afterlifeGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
 SOONG_CONFIG_afterlifeGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 SOONG_CONFIG_afterlifeGlobalVars_gralloc_handle_has_ubwcp_format := $(TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT)
+SOONG_CONFIG_afterlifeGlobalVars_include_miui_camera := $(TARGET_INCLUDES_MIUI_CAMERA)
 SOONG_CONFIG_afterlifeGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_afterlifeGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_afterlifeNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
