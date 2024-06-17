@@ -1,39 +1,35 @@
-# Inherit common mobile Lineage stuff
-$(call inherit-product, vendor/lineage/config/common.mk)
+# Inherit common mobile AfterLife stuff
+$(call inherit-product, vendor/afterlife/config/common.mk)
 
 # Include AOSP audio files
-include vendor/lineage/config/aosp_audio.mk
+include vendor/afterlife/config/aosp_audio.mk
 
-# Include Lineage audio files
-include vendor/lineage/config/lineage_audio.mk
+# Include AfterLife audio files
+include vendor/afterlife/config/afterlife_audio.mk
 
-# Default notification/alarm sounds
+# Sounds (default)
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.notification_sound=Argon.ogg \
-    ro.config.alarm_alert=Hassium.ogg
+    ro.config.ringtone=Cartel.ogg \
+    ro.config.notification_sound=no-pro.ogg \
+    ro.config.alarm_alert=frenzy.ogg
 
 # Apps
 PRODUCT_PACKAGES += \
-    Backgrounds \
-    ExactCalculator \
-    Jelly
+    ExactCalculator
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
-    TrebuchetQuickStepGo
+    AfterHomeQuickStepGo
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStepGo
+    AfterHomeQuickStepGo
 else
 PRODUCT_PACKAGES += \
-    TrebuchetQuickStep
+    AfterHomeQuickStep
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStep
+    AfterHomeQuickStep
 endif
-
-PRODUCT_PACKAGES += \
-    TrebuchetOverlay
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -45,42 +41,6 @@ PRODUCT_PACKAGES += \
     lineage_charger_animation_vendor
 endif
 
-# Customizations
-PRODUCT_PACKAGES += \
-    IconPackCircularAndroidOverlay \
-    IconPackCircularLauncherOverlay \
-    IconPackCircularSettingsOverlay \
-    IconPackCircularSystemUIOverlay \
-    IconPackFilledAndroidOverlay \
-    IconPackFilledLauncherOverlay \
-    IconPackFilledSettingsOverlay \
-    IconPackFilledSystemUIOverlay \
-    IconPackKaiAndroidOverlay \
-    IconPackKaiLauncherOverlay \
-    IconPackKaiSettingsOverlay \
-    IconPackKaiSystemUIOverlay \
-    IconPackRoundedAndroidOverlay \
-    IconPackRoundedLauncherOverlay \
-    IconPackRoundedSettingsOverlay \
-    IconPackRoundedSystemUIOverlay \
-    IconPackSamAndroidOverlay \
-    IconPackSamLauncherOverlay \
-    IconPackSamSettingsOverlay \
-    IconPackSamSystemUIOverlay \
-    IconPackVictorAndroidOverlay \
-    IconPackVictorLauncherOverlay \
-    IconPackVictorSettingsOverlay \
-    IconPackVictorSystemUIOverlay \
-    IconShapePebbleOverlay \
-    IconShapeRoundedRectOverlay \
-    IconShapeSquareOverlay \
-    IconShapeSquircleOverlay \
-    IconShapeTaperedRectOverlay \
-    IconShapeTeardropOverlay \
-    IconShapeVesselOverlay \
-    LineageNavigationBarNoHint \
-    NavigationBarMode2ButtonOverlay
-
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
@@ -91,6 +51,5 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    LineageBlackTheme \
     ThemePicker \
     ThemesStub
