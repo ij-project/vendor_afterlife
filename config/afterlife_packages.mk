@@ -2,6 +2,10 @@
 PRODUCT_PACKAGES += \
     BtHelper
 
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
+
 # Extra tools in AfterLife
 PRODUCT_PACKAGES += \
     bash \
