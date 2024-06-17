@@ -6,6 +6,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
+# Datura Firewall
+PRODUCT_PACKAGES += \
+    Datura
+
 # Extra tools in AfterLife
 PRODUCT_PACKAGES += \
     bash \
