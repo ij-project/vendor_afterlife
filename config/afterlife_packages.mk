@@ -11,3 +11,7 @@ PRODUCT_PACKAGES += \
     nano \
     setcap \
     vim
+
+# GameSpace
+PRODUCT_PACKAGES += \
+    GameSpace
