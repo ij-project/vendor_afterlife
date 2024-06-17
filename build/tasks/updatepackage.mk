@@ -15,14 +15,14 @@
 # -----------------------------------------------------------------
 # SuperiorOS OTA update package
 
-BLAZE_TARGET_UPDATEPACKAGE := $(PRODUCT_OUT)/$(BLAZE_VERSION)-updateimages.zip
+AFTERLIFE_TARGET_UPDATEPACKAGE := $(PRODUCT_OUT)/$(AFTERLIFE_VERSION)-updateimages.zip
 
 .PHONY: updatepackage
 updatepackage: $(INTERNAL_UPDATE_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_UPDATE_PACKAGE_TARGET) $(BLAZE_TARGET_UPDATEPACKAGE)
+	$(hide) ln -f $(INTERNAL_UPDATE_PACKAGE_TARGET) $(AFTERLIFE_TARGET_UPDATEPACKAGE)
 	@echo ""
 	@echo ""
 	@echo "**************************************************"
-	@echo " OTA update package is ready: $(BLAZE_TARGET_UPDATEPACKAGE)"
+	@echo " OTA update package is ready: $(AFTERLIFE_TARGET_UPDATEPACKAGE)"
 	@echo "**************************************************"
 	@echo ""
