@@ -30,7 +30,9 @@ PRODUCT_PACKAGES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    CustomFontPixelLauncherOverlay
+    CustomFontPixelLauncherOverlay \
+    DocumentsUIOverlay \
+    NetworkStackOverlay
 
 # Protobuf - Workaround for prebuilt Qualcomm HAL
 PRODUCT_PACKAGES += \
