@@ -7,6 +7,20 @@ else
     AFTERLIFE_BUILD_DATE := $(shell date -u +%Y%m%d)
 endif
 
+ifndef AFTERLIFE_GAPPS
+    AFTERLIFE_ZIP_TYPE := Vanilla
+
+    $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+else
+    ifdef GAPPS_CORE
+        AFTERLIFE_ZIP_TYPE := CoreGApps
+    else ifdef GAPPS_BASIC
+        AFTERLIFE_ZIP_TYPE := BasicGApps
+    else
+        AFTERLIFE_ZIP_TYPE := GApps
+    endif
+endif
+
 # versioning
 AFTERLIFE_CODENAME := Patience
 
