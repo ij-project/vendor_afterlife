@@ -18,7 +18,7 @@ $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage14.mk)
 
 # 2019 Material product sounds (CC-BY 4.0)
 # Source:  https://material.io/design/sound/sound-resources.html
-LOCAL_PATH := vendor/afterlife/prebuilt/common/media/audio
+LOCAL_PATH := vendor/afterlife-ui/audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/alarms/frenzy.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/frenzy.ogg \
     $(LOCAL_PATH)/notifications/no-pro.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/no-pro.ogg \
