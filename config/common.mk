@@ -250,4 +250,4 @@ include packages/overlays/Themes/themes.mk
 # Versioning
 include vendor/afterlife/config/version.mk
 
--include vendor/afterlife-priv/keys/keys.mk
+-include vendor/after-priv/keys/keys.mk
