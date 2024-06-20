@@ -74,7 +74,7 @@ function goafterlife()
             lunch afterlife_$target-$variant
         fi
 
-        make cleaninstall
+        make installclean
         mka afterlife
     fi
 
