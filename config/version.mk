@@ -10,8 +10,9 @@ endif
 ifndef AFTERLIFE_GAPPS
     AFTERLIFE_ZIP_TYPE := Vanilla
 
-    $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 else
+    $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+
     ifdef GAPPS_CORE
         AFTERLIFE_ZIP_TYPE := CoreGApps
     else ifdef GAPPS_BASIC
