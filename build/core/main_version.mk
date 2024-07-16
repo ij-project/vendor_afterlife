@@ -10,7 +10,8 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.afterlife.releasetype=$(AFTERLIFE_BUILD_TYPE) \
     ro.afterlife.releasevarient=$(AFTERLIFE_ZIP_TYPE) \
     ro.afterlife.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.afterlife.version.codename=$(AFTERLIFE_CODENAME)
+    ro.afterlife.version.codename=$(AFTERLIFE_CODENAME) \
+    ro.afterlife.version.extra=$(AFTERLIFE_VERSION_EXTRA)
 
 # AfterLife Platform Display Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
