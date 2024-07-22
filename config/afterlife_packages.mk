@@ -10,6 +10,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Datura
 
+# Etar
+PRODUCT_PACKAGES += \
+    Etar
+
 # Extra tools in AfterLife
 PRODUCT_PACKAGES += \
     bash \
