@@ -1,14 +1,11 @@
 # Inherit common mobile AfterLife stuff
 $(call inherit-product, vendor/afterlife/config/common.mk)
 
-# Include AOSP audio files
-include vendor/afterlife/config/aosp_audio.mk
-
 # Include AfterLife audio files
 include vendor/afterlife/config/afterlife_audio.mk
 
 # Sounds (default)
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Cartel.ogg \
     ro.config.notification_sound=no-pro.ogg \
     ro.config.alarm_alert=frenzy.ogg
