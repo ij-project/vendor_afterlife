@@ -15,7 +15,10 @@ PRODUCT_PACKAGES += \
     Recorder \
     Seedvault
 
-ifneq ($(PRODUCT_NO_CAMERA),true)
+ifeq ($(USE_AOSP_CAMERA),true)
+PRODUCT_PACKAGES += \
+    Camera2
+else
 PRODUCT_PACKAGES += \
     Aperture
 endif
