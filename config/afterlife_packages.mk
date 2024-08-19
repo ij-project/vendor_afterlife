@@ -36,6 +36,11 @@ endif
 PRODUCT_PACKAGES += \
     GameSpace
 
+#Omni 
+PRODUCT_PACKAGES += \
+    OmniJaws \
+    OmniStyle
+
 # Overlay
 PRODUCT_PACKAGES += \
     CustomFontPixelLauncherOverlay \
