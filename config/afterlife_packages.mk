@@ -6,10 +6,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
-# Datura Firewall
-PRODUCT_PACKAGES += \
-    Datura
-
 # Etar
 PRODUCT_PACKAGES += \
     Etar
