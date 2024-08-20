@@ -57,6 +57,22 @@ function goafterlife()
 {
     target=$1
     local variant=$2
+    local clean_build="true"
+
+    while [[ $# -gt 1 ]]; do
+        case "${1}" in
+            --dirty)
+                clean_build="false"; shift ;;
+            user)
+                variant="user"; shift ;;
+            userdebug)
+                variant="userdebug"; shift ;;
+            eng)
+                variant="eng"; shift ;;
+            *)
+                variant="userdebug"; shift ;;
+        esac
+    done
 
     if [ $# -eq 0 ]; then
         # No arguments, so let's have the full menu
@@ -73,10 +89,12 @@ function goafterlife()
 
             lunch afterlife_$target-$variant
         fi
-
-        make installclean
-        mka afterlife
     fi
+
+    if [ "$clean_build" = "true" ]; then
+        make installclean
+    fi
+    m afterlife -j$(nproc --all)
 
     return $?
 }
