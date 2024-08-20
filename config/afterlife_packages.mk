@@ -6,6 +6,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
+# ExactCalculator
+PRODUCT_PACKAGES += \
+    ExactCalculator
+
 # Etar
 PRODUCT_PACKAGES += \
     Etar
@@ -36,7 +40,7 @@ endif
 PRODUCT_PACKAGES += \
     GameSpace
 
-#Omni 
+#Omni
 PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle
