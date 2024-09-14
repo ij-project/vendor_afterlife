@@ -21,5 +21,5 @@ $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage14.mk)
 LOCAL_PATH := vendor/afterlife-ui/audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/alarms/frenzy.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/frenzy.ogg \
-    $(LOCAL_PATH)/notifications/no-pro.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/no-pro.ogg \
-    $(LOCAL_PATH)/ringtones/GhimeGhime.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Cartel.ogg
+    $(LOCAL_PATH)/notifications/Casper.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Casper.ogg \
+    $(LOCAL_PATH)/ringtones/Cartel.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Cartel.ogg
