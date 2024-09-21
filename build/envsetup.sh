@@ -56,23 +56,8 @@ function mk_timer()
 function goafterlife()
 {
     target=$1
-    local variant=$2
+    local variant="userdebug"
     local clean_build="true"
-
-    while [[ $# -gt 1 ]]; do
-        case "${1}" in
-            --dirty)
-                clean_build="false"; shift ;;
-            user)
-                variant="user"; shift ;;
-            userdebug)
-                variant="userdebug"; shift ;;
-            eng)
-                variant="eng"; shift ;;
-            *)
-                variant="userdebug"; shift ;;
-        esac
-    done
 
     if [ $# -eq 0 ]; then
         # No arguments, so let's have the full menu
@@ -82,6 +67,29 @@ function goafterlife()
             # A buildtype was specified, assume a full device name
             lunch $target
         else
+            while [[ $# -gt 0 ]]; do
+                case "${1}" in
+                    --dirty)
+                        clean_build="false"
+                        shift
+                        ;;
+                    user)
+                        variant="user"
+                        shift
+                        ;;
+                    userdebug)
+                        variant="userdebug"
+                        shift
+                        ;;
+                    eng)
+                        variant="eng"
+                        shift
+                        ;;
+                    *)
+                        shift
+                        ;;
+                esac
+            done
             # This is probably just the AfterLife model name
             if [ -z "$variant" ]; then
                 variant="userdebug"
