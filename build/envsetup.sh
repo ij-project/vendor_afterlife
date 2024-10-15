@@ -99,6 +99,8 @@ function goafterlife()
         fi
     fi
 
+    rm -rf out/target/product/$target/AfterLife*zip*
+
     if [ "$clean_build" = "true" ]; then
         make installclean
     fi
