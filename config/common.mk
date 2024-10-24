@@ -13,10 +13,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
-# Disable ADB authentication
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.usb.config=adb
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/afterlife/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
