@@ -56,7 +56,7 @@ function mk_timer()
 function goafterlife()
 {
     target=$1
-    local variant="userdebug"
+    local variant="user"
     local clean_build="true"
     local upload_zip="false"
 
